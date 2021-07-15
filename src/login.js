@@ -1,7 +1,7 @@
 const validateForm = (event) => {
     event.preventDefault();
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    const username = document.getElementById('username');
+    const password = document.getElementById('password');
 
     if (username === 'sarah' && password === 'letmein') {
         console.log(userDefaults);
@@ -22,12 +22,13 @@ const userDefaults = {
     roles: ['admin', 'learner', 'developer']
 };
 
-
+{
     const openApp = () => {
         form.classList.add('d-none');
         app.classList.remove('d-none');
         failure.classList.add('d-none');
     };
+}
 
 const loginFail = () => {
     failure.classList.remove('d-none');
